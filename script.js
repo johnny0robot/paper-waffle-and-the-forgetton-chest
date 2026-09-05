@@ -1,5 +1,8 @@
 import { initEngine, createPlayer, movePlayer } from './engine.js';
 
+// define game music
+const level1bgmusic = new Audio('../aduio/'); 
+    
 initEngine();
 
 const playerId = 'wafflePlayer';
