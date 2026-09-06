@@ -37,3 +37,7 @@ function controlLoop() {
     }
 }
 controlLoop();
+
+window.addEventListener('load', () => {
+  
+});
