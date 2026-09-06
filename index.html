@@ -29,9 +29,30 @@
 <body>
 
   <div id="div"></div>
-
-  <dialog>
     
+  <dialog>
+    <div class="tab-container">
+    <div class="tab-menu">
+      <button class="tab-btn active" onclick="openTab(event, 'Tab1')">Tab 1</button>
+      <button class="tab-btn" onclick="openTab(event, 'Tab2')">Tab 2</button>
+      <button class="tab-btn" onclick="openTab(event, 'Tab3')">Tab 3</button>
+    </div>
+
+    <div id="Tab1" class="tab-content" style="display: block;">
+      <h3>First Tab Content</h3>
+      <p>This is the content for the first tab.</p>
+    </div>
+
+    <div id="Tab2" class="tab-content">
+      <h3>Second Tab Content</h3>
+      <p>This is the content for the second tab.</p>
+    </div>
+
+    <div id="Tab3" class="tab-content">
+      <h3>Third Tab Content</h3>
+      <p>This is the content for the third tab.</p>
+    </div>
+  </div>
   </dialog>
   <!-- Added canvas element commonly needed for JS games/graphics -->
   <canvas id="gameCanvas"></canvas>
