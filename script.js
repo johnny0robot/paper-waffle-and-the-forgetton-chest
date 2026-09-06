@@ -41,3 +41,21 @@ controlLoop();
 window.addEventListener('load', () => {
   
 });
+
+function openTab(evt, tabId) {
+  // Hide all tab content elements
+  const tabContent = document.getElementsByClassName("tab-content");
+  for (let i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // Remove the "active" class from all tab buttons
+  const tabButtons = document.getElementsByClassName("tab-btn");
+  for (let i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+  }
+
+  // Show the specific current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
+}
